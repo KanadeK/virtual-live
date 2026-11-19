@@ -1,0 +1,28 @@
+/* Character pixels are original raster artwork; no SVG rig is loaded. */
+.actor[data-renderer="png-sequence"] {
+  /* idle alpha bbox is y=251..915 of the 960px frame: 664 x 1.5 = 996 visible px. */
+  width: 960px;
+  height: 1440px;
+  top: 100px;
+  filter: drop-shadow(0 5px 3px #35485b16);
+}
+.character-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+}
+.character-loading {
+  position: absolute;
+  inset: 35% 10%;
+  color: #6b8a83;
+  font-size: 23px;
+  text-align: center;
+}
+
+.speech-bubble {
+  top: 905px;
+}
+.gift-overlay {
+  top: 425px;
+}

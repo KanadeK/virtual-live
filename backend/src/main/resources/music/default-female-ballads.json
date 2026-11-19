@@ -1,0 +1,75 @@
+{
+  "source": {
+    "name": "热歌榜",
+    "chartId": "3778678",
+    "url": "https://music.163.com/#/discover/toplist?id=3778678",
+    "selectedOn": "2026-10-28",
+    "selection": "榜单中的中文女声情歌，公开音源核验通过"
+  },
+  "songs": [
+    {
+      "songId": "1403318151",
+      "title": "把回忆拼好给你",
+      "artist": "王贰浪",
+      "songUrl": "https://music.163.com/#/song?id=1403318151",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=1403318151.mp3",
+      "durationMs": 381000
+    },
+    {
+      "songId": "2078101758",
+      "title": "时过境迁",
+      "artist": "苏艺馨Chency",
+      "songUrl": "https://music.163.com/#/song?id=2078101758",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=2078101758.mp3",
+      "durationMs": 269117
+    },
+    {
+      "songId": "3436855494",
+      "title": "自由的你",
+      "artist": "G.E.M.邓紫棋",
+      "songUrl": "https://music.163.com/#/song?id=3436855494",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=3436855494.mp3",
+      "durationMs": 296900
+    },
+    {
+      "songId": "465921195",
+      "title": "还是分开",
+      "artist": "张叶蕾",
+      "songUrl": "https://music.163.com/#/song?id=465921195",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=465921195.mp3",
+      "durationMs": 226791
+    },
+    {
+      "songId": "3445520471",
+      "title": "隔岸(女版)",
+      "artist": "可楼",
+      "songUrl": "https://music.163.com/#/song?id=3445520471",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=3445520471.mp3",
+      "durationMs": 231261
+    },
+    {
+      "songId": "1457113272",
+      "title": "故里逢春",
+      "artist": "阿YueYue",
+      "songUrl": "https://music.163.com/#/song?id=1457113272",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=1457113272.mp3",
+      "durationMs": 218640
+    },
+    {
+      "songId": "502043537",
+      "title": "第三人称",
+      "artist": "冯沁苑(买辣椒也用券)",
+      "songUrl": "https://music.163.com/#/song?id=502043537",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=502043537.mp3",
+      "durationMs": 269296
+    },
+    {
+      "songId": "1311347661",
+      "title": "无情画",
+      "artist": "王唯旖",
+      "songUrl": "https://music.163.com/#/song?id=1311347661",
+      "audioUrl": "https://music.163.com/song/media/outer/url?id=1311347661.mp3",
+      "durationMs": 255250
+    }
+  ]
+}

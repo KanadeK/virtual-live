@@ -1,0 +1,71 @@
+/* Generated scenes carry their own weather and light. Grading stays on the backdrop. */
+.room-atmosphere {
+  animation: none;
+  filter: none;
+}
+.room-light-mask,
+.room-light-mask::before,
+.room-light-mask::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.room-light-mask {
+  z-index: 2;
+  opacity: .25;
+  mix-blend-mode: soft-light;
+  animation: room-luminance 32s ease-in-out infinite;
+  animation-delay: var(--room-light-offset, 0ms);
+}
+.room-light-mask::before,
+.room-light-mask::after {
+  content: "";
+  will-change: opacity;
+  animation-duration: 32s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: var(--room-light-offset, 0ms);
+}
+.room-light-mask::before {
+  background:
+    radial-gradient(ellipse at 20% 78%, #ffc27c9e, transparent 72%),
+    linear-gradient(125deg, #ffe0a961, #e9a56842);
+  animation-name: room-warmth;
+}
+.room-light-mask::after {
+  background:
+    radial-gradient(ellipse at 77% 27%, #a6d7ff80, transparent 75%),
+    linear-gradient(145deg, #719fe96b, #697bc14d);
+  animation-name: room-coolness;
+}
+@keyframes room-luminance {
+  0%, 100% { background-color: #101c3a33; }
+  25% { background-color: #ffe4b81a; }
+  50% { background-color: #fff8e62e; }
+  75% { background-color: #101d3214; }
+}
+@keyframes room-breathe {
+  0%, 100% { filter: brightness(.86); }
+  50% { filter: brightness(1.12); }
+}
+@keyframes room-warmth {
+  0%, 100% { opacity: .04; }
+  25% { opacity: .65; }
+  50% { opacity: 1; }
+  75% { opacity: .35; }
+}
+@keyframes room-coolness {
+  0%, 100% { opacity: .95; }
+  25% { opacity: .3; }
+  50% { opacity: .02; }
+  75% { opacity: .65; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .room-atmosphere { animation: none; filter: none; will-change: auto; }
+  .room-light-mask,
+  .room-light-mask::before,
+  .room-light-mask::after { animation: none; }
+  .room-light-mask { background-color: #101c3a14; }
+  .room-light-mask::before { opacity: .2; }
+  .room-light-mask::after { opacity: .35; }
+}

@@ -1,0 +1,60 @@
+/* The V3 stage owns these styles. The control/workbench has no nightshop class. */
+html:has(body.nightshop-page), body.nightshop-page { background: transparent; }
+body.nightshop-page .live-viewport { width: 100vw; height: 100dvh; }
+body.nightshop-page .nightshop-shell { width: 100vw; height: 100dvh; background: transparent; }
+.nightshop { --night-ink:#fff4ee; --night-muted:#d8c6e4; --night-gold:#f1c98b; color:var(--night-ink); background:transparent; font-family:"Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif; }
+.nightshop .night-background, .nightshop .night-vignette, .nightshop .night-ui { position:absolute; inset:0; }
+.nightshop .night-background { z-index:0; }
+.nightshop .night-background>img { width:100%; height:100%; object-fit:cover; }
+.nightshop .night-vignette { background:linear-gradient(180deg,#100d2633,transparent 34%,transparent 70%,#160e262e); }
+.nightshop .night-ui { z-index:30; pointer-events:none; }
+.nightshop .night-brand { position:absolute; left:132px; top:455px; width:816px; height:86px; padding:18px 24px; border:1px solid #efcda68c; border-radius:18px; background:linear-gradient(110deg,#21132ee8,#2b1a3ce0); box-shadow:0 0 0 3px #4c305b73,0 12px 34px #0e081559,inset 0 0 36px #e5b1de15; }
+.nightshop .night-brand h1 { margin:0; font-size:40px; line-height:1.15; font-family:KaiTi,STKaiti,"Kaiti SC",serif; font-weight:650; text-shadow:0 0 18px #f0ceff60; white-space:nowrap; }
+.nightshop .night-brand h1 i { float:right; color:#e8b2f6; font-style:normal; font-size:28px; }
+.nightshop .night-board { position:absolute; left:132px; top:553px; width:816px; padding:10px 20px; border:1px solid #dbb2dd9e; border-radius:24px; background:linear-gradient(180deg,#231830f5,#1e1628f7 68%,#2f1e3af7); box-shadow:0 10px 42px #0a06106b,inset 0 0 0 1px #fff1e614; }
+.nightshop .night-board:before { content:""; position:absolute; left:24px; right:24px; top:-1px; height:1px; background:linear-gradient(90deg,transparent,#f7ceaa,transparent); }
+.nightshop .night-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-bottom:8px; }
+.nightshop .night-metrics>div { display:grid; gap:0; align-content:center; min-width:0; padding:4px 10px; border:1px solid #c4a2cc38; border-radius:10px; background:#d9a4e009; }
+.nightshop .night-metrics small { font-size:26px; line-height:1.1; color:var(--night-muted); white-space:nowrap; }
+.nightshop .night-metrics strong { font-family:Georgia,"Microsoft YaHei",serif; font-size:40px; color:#f6d3b0; font-weight:400; line-height:1; white-space:nowrap; }
+.nightshop .night-music-row { display:grid; grid-template-columns:64px minmax(0,1fr) 190px; gap:14px; align-items:center; padding:8px 0; border-top:1px solid #b78fae47; border-bottom:1px solid #b78fae47; }
+.nightshop .night-record { width:64px; height:64px; display:grid; place-items:center; border-radius:50%; background:repeating-radial-gradient(circle,#251e31 0 2px,#49394d 3px 4px); box-shadow:0 0 0 1px #b78fae88; }
+.nightshop .night-record>span { width:33px; height:33px; border-radius:50%; background:#b494c7; color:#37253e; display:grid; place-items:center; font-size:22px; }
+.nightshop .night-record.playing { animation:night-record-spin 12s linear infinite; }
+.nightshop .night-now { min-width:0; }
+.nightshop .night-now>strong { display:block; font-size:40px; font-weight:500; line-height:1.05; margin:0 0 2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.nightshop #night-artist { font-size:26px; line-height:1.1; color:var(--night-muted); overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.nightshop .night-timeline { display:flex; gap:9px; margin-top:4px; align-items:center; }
+.nightshop .night-timeline>div { flex:1; height:3px; background:#cab4cb33; overflow:hidden; }
+.nightshop .night-timeline i { display:block; width:0; height:100%; background:linear-gradient(90deg,#ba87e5,#f0d3bf); }
+.nightshop .night-timeline>span { flex:none; font-size:18px; line-height:1; color:var(--night-muted); font-variant-numeric:tabular-nums; }
+.nightshop .night-queue { border-left:1px solid #b78fae44; padding-left:12px; align-self:stretch; min-width:0; }
+.nightshop .night-queue>small { font-size:24px; line-height:1.2; color:var(--night-muted); white-space:nowrap; }
+.nightshop .night-queue b { margin-left:5px; font-size:24px; font-weight:400; }
+.nightshop .night-queue ol { margin:5px 0 0; padding:0; list-style:none; }
+.nightshop .night-queue li { font-size:24px; color:var(--night-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:1.15; }
+.nightshop .night-recent { display:flex; gap:12px; align-items:center; margin-top:6px; min-height:34px; }
+.nightshop .night-recent>span { flex:none; padding:2px 6px; border:1px solid #b58bc538; border-radius:6px; background:#b58bc51f; font-size:24px; line-height:1.15; color:#dfc9e8; white-space:nowrap; }
+.nightshop .night-recent p { min-width:0; margin:0; font-size:28px; line-height:1.2; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.nightshop .night-avatar { position:absolute; inset:0 0 auto; height:1480px; overflow:hidden; z-index:10; pointer-events:none; }
+.nightshop .actor[data-renderer="png-sequence"] { width:1024px; height:1536px; top:425px; left:540px; filter:drop-shadow(0 5px 12px #0d09194f); }
+.nightshop .actor-shadow { display:none; }
+.nightshop .night-foreground { position:absolute; left:0; right:0; top:1480px; height:440px; z-index:20; pointer-events:none; }
+.nightshop .night-foreground:before { content:""; position:absolute; left:0; right:0; top:0; height:110px; background:linear-gradient(180deg,#846045,#b58960 9%,#74503e 62%,#4d3132); border-top:3px solid #efc389b3; box-shadow:0 -5px 15px #24122d55; }
+.nightshop .night-desk { display:block; width:1080px; height:110px; position:relative; z-index:2; filter:drop-shadow(0 7px 12px #17101b60); mask-image:linear-gradient(180deg,transparent,#000 7px,#000 98px,transparent),linear-gradient(90deg,transparent 16%,#000 22%,#000 83%,transparent 91%); mask-composite:intersect; }
+.nightshop .night-desk-front { position:absolute; left:0; right:0; top:98px; bottom:0; background:linear-gradient(180deg,#654637 0%,#3c2935 18%,#2b2033 75%,#241b2d); box-shadow:inset 0 15px 24px #271b34a0; }
+.nightshop .night-cat { position:absolute; z-index:3; right:115px; top:-95px; width:205px; height:auto; mask-image:radial-gradient(ellipse 49% 40% at 53% 63%,#000 88%,transparent 100%); filter:drop-shadow(0 5px 6px #160d2950); }
+.nightshop .night-caption { position:absolute; left:150px; top:1140px; width:780px; padding:8px 14px; border:1px solid #cfabd35c; border-radius:12px; background:linear-gradient(90deg,#201727ee,#2b1f37ee); box-shadow:0 5px 17px #120b264d; }
+.nightshop .night-caption>span { display:block; color:#d3b3e3; font-size:18px; line-height:22px; margin-bottom:3px; }
+.nightshop .night-caption p { margin:0; font-size:24px; line-height:1.3; font-weight:400; color:var(--night-ink); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; overflow-wrap:anywhere; }
+.nightshop .night-player-bubble,.nightshop .gift-overlay,.nightshop .particles { display:none!important; }
+.nightshop .night-safe { position:absolute; inset:0; z-index:40; pointer-events:none; }
+.nightshop .night-safe>div { position:absolute; display:grid; place-content:center; text-align:center; font-size:21px; line-height:1.6; color:#fff; background:#33485877; border:2px dashed #f8ded6c9; }
+.nightshop .night-safe-top { left:99px; right:99px; top:64px; height:200px; }
+.nightshop .night-safe-promo { left:724px; top:255px; width:258px; height:191px; }
+.nightshop .night-safe-chat { left:99px; right:99px; top:1248px; height:535px; }
+.nightshop .night-safe-input { left:99px; right:99px; top:1785px; height:135px; }
+body.nightshop-page .voice-gate,body.nightshop-page .fullscreen-toggle { background:#30203eea; border-color:#efcda680; color:#fff4ee; }
+body.nightshop-page .fullscreen-toggle { display:none; }
+@keyframes night-record-spin { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) { .nightshop *, .nightshop *:before, .nightshop *:after { animation:none!important; transition:none!important; } }

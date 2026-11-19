@@ -1,0 +1,23 @@
+{
+  "name": "douyinVirtualLive-collector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.6",
+    "pako": "^2.1.0",
+    "playwright-core": "^1.64.1",
+    "protobufjs": "^7.5.4",
+    "undici": "^7.30.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pako": "^2.0.4",
+    "@types/ws": "^8.18.1",
+    "typescript": "~5.9.3"
+  }
+}

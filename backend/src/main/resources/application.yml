@@ -1,0 +1,64 @@
+server:
+  address: 127.0.0.1
+  port: ${SERVER_PORT:8080}
+  error:
+    include-message: always
+spring:
+  application:
+    name: douyinVirtualLive
+  mvc:
+    async:
+      request-timeout: 0
+  jackson:
+    default-property-inclusion: non_null
+live:
+  ai-provider: ${AI_PROVIDER:mock}
+  deepseek-api-key: ${DEEPSEEK_API_KEY:}
+  deepseek-model: ${DEEPSEEK_MODEL:deepseek-flash}
+  event-source: ${LIVE_EVENT_SOURCE:mock}
+  mock-min-seconds: ${MOCK_MIN_SECONDS:5}
+  mock-max-seconds: ${MOCK_MAX_SECONDS:15}
+
+music:
+  provider: ${MUSIC_PROVIDER:local}
+  native-url: ${MUSIC_QQ_BRIDGE_URL:}
+  native-token-file: ${MUSIC_QQ_BRIDGE_TOKEN_FILE:}
+  gateway-url: ${MUSIC_GATEWAY_URL:}
+  awoo-state-url: ${MUSIC_AWOO_STATE_URL:}
+  search-url: ${NETEASE_SEARCH_URL:https://music.163.com/api/search/get}
+  local-dir: ${LOCAL_MUSIC_DIR:../defaultBackgroundMusic}
+  local-enabled: ${LOCAL_MUSIC_ENABLED:true}
+
+douyin:
+  node: ${DOUYIN_NODE:node}
+  worker: ${DOUYIN_WORKER:../collector/dist/worker.js}
+
+bilibili:
+  node: ${BILIBILI_NODE:node}
+  worker: ${BILIBILI_WORKER:../collector/dist/bilibili/worker.js}
+
+integration:
+  ai-provider: ${AI_PROVIDER:mock}
+  deepseek-key: ${DEEPSEEK_API_KEY:}
+  deepseek-model: ${DEEPSEEK_MODEL:deepseek-flash}
+  deepseek-base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+  ai-max-tokens: ${AI_MAX_OUTPUT_TOKENS:96}
+  ai-max-chars: ${AI_MAX_REPLY_CHARS:45}
+  ai-daily-limit: ${AI_DAILY_REQUEST_LIMIT:10}
+  tts-provider: ${TTS_PROVIDER:browser}
+  doubao-api-key: ${DOUBAO_TTS_API_KEY:}
+  doubao-auth-mode: ${DOUBAO_TTS_AUTH_MODE:}
+  doubao-app-id: ${DOUBAO_TTS_APP_ID:}
+  doubao-access-token: ${DOUBAO_TTS_ACCESS_TOKEN:}
+  doubao-resource-id: ${DOUBAO_TTS_RESOURCE_ID:seed-tts-2.0}
+  doubao-speaker: ${DOUBAO_TTS_SPEAKER:zh_female_gujie_uranus_bigtts}
+  doubao-url: ${DOUBAO_TTS_URL:https://openspeech.bytedance.com/api/v3/tts/unidirectional}
+  tts-daily-limit: ${TTS_DAILY_CHAR_LIMIT:500}
+  paid-auto-enabled: ${PAID_AUTO_ENABLED:false}
+  timeout-seconds: ${PROVIDER_TIMEOUT_SECONDS:20}
+  data-dir: ${PROVIDER_DATA_DIR:../.runtime/providers}
+  proxy-url: ${OUTBOUND_PROXY_URL:}
+
+finance:
+  fish-opening-balance: ${FISH_OPENING_BALANCE:0}
+  fish-room-id: ${FISH_ROOM_ID:}

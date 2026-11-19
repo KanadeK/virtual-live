@@ -1,0 +1,39 @@
+.capture-mode { font-size:10px; color:#6c8758; background:#edf3e4; border:1px solid #d7e3ca; border-radius:5px; padding:4px 7px; }
+.capture-platforms { display:flex; flex-wrap:wrap; gap:5px; padding:4px; width:fit-content; max-width:100%; border:1px solid #dbe5ce; border-radius:8px; background:#edf3e5; margin-bottom:12px; }
+.capture-platforms button { min-width:82px; padding:8px 19px; border:1px solid transparent; border-radius:5px; background:transparent; color:#7b8e69; line-height:1.5; }
+.capture-platforms button[aria-pressed=true] { background:#fbfcf6; color:#3f653a; border-color:#d7e2ca; box-shadow:0 1px 3px #45613a0c; font-weight:600; }
+.capture-source { margin:0 0 13px; padding:9px 11px; border-left:3px solid #9db78a; border-radius:2px 6px 6px 2px; background:#f0f5e8; color:#5e7850; font-size:11px; line-height:1.8; overflow-wrap:anywhere; }
+.capture-intro, .capture-message { color:#7d8d6e; font-size:12px; line-height:1.9; margin:0 0 14px; overflow-wrap:anywhere; }
+.capture-connect-row { display:flex; gap:8px; }
+.capture-connect-row input { flex:1; min-width:0; }
+.capture-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:13px; }
+.capture-actions button { font-size:12px; padding:9px 12px; }
+.capture-login-message { color:#82916e; font-size:11px; line-height:1.9; margin:10px 0 0; overflow-wrap:anywhere; }
+.capture-cookie { margin:14px 0; color:#83936f; font-size:11px; }
+.capture-cookie summary { cursor:pointer; padding:7px 0; }
+.capture-cookie p { font-size:11px; line-height:1.8; margin:8px 0; }
+.capture-status-row { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin:22px 0 10px; }
+.capture-status-row>span:last-child { color:#82916e; font-size:11px; }
+.capture-status-row [data-state=live] { background:#e2edd9; color:#547b43; }
+.capture-status-row [data-state=error] { background:#f8e9de; color:#a5684d; }
+.capture-error { background:#faf0e5; border:1px solid #ebd9c3; padding:9px 11px; border-radius:6px; color:#9a7050; font-size:11px; line-height:1.8; margin:0 0 11px; overflow-wrap:anywhere; }
+.capture-metrics { display:flex; flex-wrap:wrap; align-items:baseline; gap:5px 12px; font-size:11px; line-height:1.8; color:#83946e; }
+.capture-metrics>span:first-child { flex:1; min-width:0; overflow-wrap:anywhere; }
+.capture-metrics .text-button { font-size:11px; padding-top:0; padding-bottom:0; }
+.capture-toolbar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:18px 0 12px; color:#758965; font-size:11px; }
+.capture-toolbar>span { margin-right:auto; }
+.capture-toolbar select { width:auto; padding:6px 8px; font-size:11px; }
+.capture-toolbar .text-button { font-size:11px; }
+.capture-feed { height:clamp(260px,42dvh,600px); overflow:auto; overscroll-behavior:contain; border:1px solid #dce5d0; border-radius:8px; background:#f3f7ec; padding:8px 13px; scrollbar-width:thin; scrollbar-color:#b8cba4 #ebf1e2; font-size:12px; line-height:1.8; }
+.capture-line { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; padding:10px 0; border-bottom:1px solid #e1e8d4; overflow-wrap:anywhere; }
+.capture-line time { color:#8c9d7a; font-size:10px; font-variant-numeric:tabular-nums; }
+.capture-origin { color:#8a9b77; font-size:10px; }
+.capture-kind { font-size:10px; background:#e1ebd5; color:#6f8c55; border-radius:4px; padding:1px 5px; }
+.capture-gift .capture-kind { background:#f3e5cc; color:#a07944; }
+.capture-member .capture-kind { background:#e0e9e4; color:#678577; }
+.capture-line b { color:#537248; font-size:12px; font-weight:600; }
+.capture-content { color:#6c805e; white-space:pre-wrap; }
+.capture-gift .capture-content { color:#987344; }
+.capture-empty { text-align:center; color:#8c9d78; margin:85px 0; font-size:12px; }
+.capture-footnote { color:#91a07d; font-size:10px; line-height:1.9; margin:11px 0 0; }
+@media(max-width:600px) { .capture-panel>.panel-heading { flex-wrap:wrap; } .capture-toolbar { gap:8px; } .capture-toolbar>span { flex-basis:100%; } .capture-feed { height:300px; padding:7px 10px; } .capture-line { gap:6px; } .capture-metrics>span:first-child { flex-basis:100%; } }

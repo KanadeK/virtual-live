@@ -1,0 +1,111 @@
+{
+  "frameWidth": 1024,
+  "frameHeight": 1536,
+  "baseline": 1330,
+  "bodyAnchorX": 512,
+  "atlas": "atlas.svg",
+  "mouths": {
+    "atlas": "mouths.svg",
+    "width": 128,
+    "height": 96,
+    "count": 4
+  },
+  "frames": {
+    "idle-0": {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "mouth": {
+        "x": 512,
+        "y": 682,
+        "width": 144,
+        "height": 96,
+        "angle": 0
+      }
+    },
+    "blink-0": {
+      "index": 1,
+      "x": 1024,
+      "y": 0,
+      "mouth": {
+        "x": 512,
+        "y": 682,
+        "width": 144,
+        "height": 96,
+        "angle": 0
+      }
+    }
+  },
+  "clips": {
+    "idle": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "blink": {
+      "frames": [
+        "blink-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "talk": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "wave": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "happy": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "celebrate": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "surprised": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "think": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "sad": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    },
+    "walk": {
+      "frames": [
+        "idle-0"
+      ],
+      "frameMs": 200,
+      "loop": true
+    }
+  }
+}
